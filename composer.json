@@ -1,0 +1,52 @@
+{
+    "type": "project",
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "*",
+        "inertiajs/inertia-laravel": "*",
+        "laravel/framework": "*",
+        "laravel/jetstream": "*",
+        "laravel/sanctum": "*",
+        "laravel/telescope": "*",
+        "tightenco/ziggy": "*"
+    },
+    "require-dev": {
+        "fakerphp/faker": "*",
+        "mockery/mockery": "*",
+        "nunomaduro/collision": "*",
+        "phpunit/phpunit": "*",
+        "spatie/laravel-ignition": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}

@@ -1,0 +1,12 @@
+{
+  "buildpacks": [
+    { "url": "heroku/php" },
+    { "url": "heroku/nodejs" }
+  ],
+  "env": {
+    "APP_DEBUG": "false",
+    "APP_ENV": "production",
+    "LOG_CHANNEL": "errorlog"
+  },  
+  "repository": "https://github.com/eaststrong/inertia-esk"
+}
