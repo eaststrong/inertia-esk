@@ -17,11 +17,11 @@
   },
   "private": true,
   "scripts": {
-    "build": "npm run production",
-    "dev": "npm run development",
+    "build": "yarn run production",
+    "dev": "yarn run development",
     "development": "mix",
     "hot": "mix watch --hot",
-    "prod": "npm run production",
+    "prod": "yarn run production",
     "production": "mix --production",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000"
