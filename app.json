@@ -4,7 +4,8 @@
     { "url": "heroku/nodejs" }
   ],
   "env": {
-    "LOG_CHANNEL": "errorlog"
+    "APP_DEBUG": "false",
+    "APP_ENV": "production"
   },  
   "repository": "https://github.com/eaststrong/inertia-esk"
 }

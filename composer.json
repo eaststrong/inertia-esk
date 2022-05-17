@@ -22,16 +22,17 @@
   "prefer-stable": true,
   "require": {
     "php": "^8.0.2",
+    "arcanedev/log-viewer": "*",    
     "guzzlehttp/guzzle": "*",
     "inertiajs/inertia-laravel": "*",
     "laravel/framework": "*",
     "laravel/jetstream": "*",
     "laravel/sanctum": "*",
-    "laravel/telescope": "*",
     "tightenco/ziggy": "*"
   },
   "require-dev": {
     "fakerphp/faker": "*",
+    "laravel/telescope": "*",
     "mockery/mockery": "*",
     "nunomaduro/collision": "*",
     "phpunit/phpunit": "*",
